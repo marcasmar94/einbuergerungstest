@@ -47,10 +47,20 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
   font-weight: 700;
   color: var(--text);
   letter-spacing: 0.01em;
+}
+
+.brand-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .nav-list {
@@ -93,6 +103,16 @@ main {
   box-shadow: var(--shadow);
 }
 
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin-top: 12px;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +127,17 @@ main {
   border-radius: 10px;
   padding: 10px 14px;
   border: 1px solid transparent;
+}
+
+.button-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.store-icon {
+  width: 18px;
+  height: 18px;
 }
 
 .button-primary {
