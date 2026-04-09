@@ -152,6 +152,10 @@ main {
   height: 18px;
 }
 
+.icon-hidden {
+  display: none;
+}
+
 .button-primary {
   background: var(--accent);
   color: #ffffff;
@@ -340,6 +344,10 @@ section + section {
   display: none;
 }
 
+.cta-hidden {
+  display: none !important;
+}
+
 .footer-wrap {
   padding: 18px 0 26px;
   color: var(--muted);
@@ -377,13 +385,14 @@ section + section {
   }
 
   .hero-head {
-    grid-template-columns: 1fr;
-    row-gap: 14px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 14px;
+    row-gap: 0;
   }
 
   .hero-logo {
-    width: 96px;
-    height: 96px;
+    width: 78px;
+    height: 78px;
     justify-self: end;
   }
 
