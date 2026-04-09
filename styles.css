@@ -103,6 +103,18 @@ main {
   box-shadow: var(--shadow);
 }
 
+.hero-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.hero-copy {
+  flex: 1;
+  min-width: 0;
+}
+
 .hero-logo {
   width: 120px;
   height: 120px;
@@ -110,7 +122,8 @@ main {
   border-radius: 22px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  margin-top: 12px;
+  margin-top: 0;
+  flex-shrink: 0;
 }
 
 .cta-row {
@@ -362,6 +375,17 @@ section + section {
   .hero,
   .content-panel {
     padding: 20px;
+  }
+
+  .hero-head {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-logo {
+    width: 96px;
+    height: 96px;
+    align-self: flex-end;
   }
 
   .trust-strip {
