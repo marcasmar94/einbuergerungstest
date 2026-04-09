@@ -8,17 +8,17 @@ Static legal/support pages for the app **Einbürgerungstest Trainer 2026**.
 
 ## Main URLs
 
-- `https://einbuergerungstest.marcelasmar.com/einbuergerungstest/privacy/`
-- `https://einbuergerungstest.marcelasmar.com/einbuergerungstest/support/`
-- `https://einbuergerungstest.marcelasmar.com/einbuergerungstest/disclaimer/`
+- `https://einbuergerungstest.marcelasmar.com/privacy/`
+- `https://einbuergerungstest.marcelasmar.com/support/`
+- `https://einbuergerungstest.marcelasmar.com/disclaimer/`
 
 ## Structure
 
 - `/index.html`
 - `/styles.css`
-- `/einbuergerungstest/privacy/index.html`
-- `/einbuergerungstest/support/index.html`
-- `/einbuergerungstest/disclaimer/index.html`
+- `/privacy/index.html`
+- `/support/index.html`
+- `/disclaimer/index.html`
 - `/app-ads.txt`
 - `/CNAME`
 
