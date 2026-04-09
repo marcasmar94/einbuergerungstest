@@ -104,14 +104,13 @@ main {
 }
 
 .hero-head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  column-gap: 24px;
 }
 
 .hero-copy {
-  flex: 1;
   min-width: 0;
 }
 
@@ -123,7 +122,7 @@ main {
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   margin-top: 0;
-  flex-shrink: 0;
+  justify-self: end;
 }
 
 .cta-row {
@@ -378,14 +377,14 @@ section + section {
   }
 
   .hero-head {
-    flex-direction: column;
-    gap: 14px;
+    grid-template-columns: 1fr;
+    row-gap: 14px;
   }
 
   .hero-logo {
     width: 96px;
     height: 96px;
-    align-self: flex-end;
+    justify-self: end;
   }
 
   .trust-strip {
