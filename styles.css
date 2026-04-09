@@ -277,6 +277,30 @@ section + section {
   gap: 18px;
 }
 
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.trust-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+
+.trust-item h2 {
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+}
+
+.trust-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .list {
   padding-left: 20px;
 }
@@ -298,6 +322,10 @@ section + section {
 .site-footer {
   border-top: 1px solid var(--border);
   background: var(--surface);
+}
+
+.mobile-sticky-cta {
+  display: none;
 }
 
 .footer-wrap {
@@ -334,5 +362,41 @@ section + section {
   .hero,
   .content-panel {
     padding: 20px;
+  }
+
+  .trust-strip {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .mobile-sticky-cta {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: var(--accent);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: var(--shadow);
+  }
+
+  .mobile-sticky-cta:hover,
+  .mobile-sticky-cta:focus-visible {
+    background: #084b8e;
+    color: #ffffff;
+    outline: none;
+  }
+
+  main {
+    padding-bottom: 108px;
   }
 }
